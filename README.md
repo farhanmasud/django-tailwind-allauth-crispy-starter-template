@@ -1,0 +1,1 @@
+# django-tailwind-starter-template
