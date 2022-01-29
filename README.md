@@ -10,9 +10,6 @@ Getting started -
 6. Setup database [requires step 2] with `bash setup-db.sh`
 7. Setup venv and install dependencies with `bash setup-venv-pip-tools.sh`
 8. Activate virtual environment with `source venv/bin/activate`
-9. Install tailwind CSS dependencies `python manage.py tailwind init`
-10. Uncomment "theme" app under installed apps on config/settings/base.py file
-11. Install tailwind dependencies with `python manage.py tailwind install`
-12. Uncomment "django_browser_reload" under installed apps and "django_browser_reload.middleware.BrowserReloadMiddleware" under middlewares on config/settings/base.py file
-11. Run migrations with `python manage.py migrate`
-12. Collect static `python manage.py migrate --no-input`
+9. Install tailwind dependencies with `python manage.py tailwind install`
+10. Run migrations with `python manage.py migrate`
+11. Collect static `python manage.py collectstatic --no-input`
