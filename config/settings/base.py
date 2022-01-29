@@ -185,6 +185,13 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # all-auth
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
+# Settings for email as username
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_AUTHENTICATION_METHOD = "email"
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+
 
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration

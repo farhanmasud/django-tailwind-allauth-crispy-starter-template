@@ -9,12 +9,14 @@ class AccountAdmin(UserAdmin):
     add_form = AccountCreationForm
     form = AccountChangeForm
     list_display = [
-        "username",
+        "email",
         "is_staff",
+        "uuid",
     ]
-    ordering = ("username",)
+    ordering = ("email",)
+    readonly_fields = ["uuid"]
     fieldsets = (
-        (None, {"fields": ("username", "password")}),
+        (None, {"fields": ("email", "password")}),
         (
             _("Permissions"),
             {
@@ -35,7 +37,7 @@ class AccountAdmin(UserAdmin):
             {
                 "classes": ("wide",),
                 "fields": (
-                    "username",
+                    "email",
                     "password1",
                     "password2",
                 ),
@@ -48,7 +50,7 @@ class AccountAdmin(UserAdmin):
         "is_active",
         "groups",
     )
-    search_fields = ("username",)
+    search_fields = ("email",)
     filter_horizontal = (
         "groups",
         "user_permissions",
