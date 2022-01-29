@@ -1,0 +1,7 @@
+WORK_ENV=local
+SECRET_KEY='77?>tN7-v7~MKw2SMEAprY[8-d~)aj&L'
+DB_NAME=django_starter_db_16
+DB_USER=django_starter_user_16
+DB_PASSWORD=rtyu4567
+DB_HOST=localhost
+DB_PORT=5432
