@@ -42,10 +42,12 @@ class CustomUserManager(BaseUserManager):
 class Account(AbstractUser):
     """User model."""
 
+    username = None
     email = models.EmailField(_("email address"), unique=True)
     uuid = models.UUIDField(default=uuid.uuid4, editable=False)
 
     USERNAME_FIELD = "email"
+    EMAIL_FIELD = "email"
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()

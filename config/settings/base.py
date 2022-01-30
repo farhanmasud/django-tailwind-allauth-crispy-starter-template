@@ -47,7 +47,7 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
-    # "allauth.socialaccount",
+    "allauth.socialaccount",
     "tailwind",
     "theme",
 ]
