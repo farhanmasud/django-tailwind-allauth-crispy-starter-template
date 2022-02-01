@@ -1,4 +1,4 @@
-# Django + Tailwind Starter Template
+# Django + Tailwind + Allauth Starter Template
 
 Getting started -
 
