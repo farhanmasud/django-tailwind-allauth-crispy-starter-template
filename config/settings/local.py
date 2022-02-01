@@ -10,7 +10,7 @@ ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 INSTALLED_APPS = (
     ["whitenoise.runserver_nostatic"]
     + INSTALLED_APPS
-    + ["debug_toolbar", "django_browser_reload"]
+    + ["debug_toolbar", "django_browser_reload", "django_extensions"]
 )
 INTERNAL_IPS = [
     "127.0.0.1",
