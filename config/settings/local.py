@@ -22,4 +22,5 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # middleware for django debug toolbar
 MIDDLEWARE += [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
