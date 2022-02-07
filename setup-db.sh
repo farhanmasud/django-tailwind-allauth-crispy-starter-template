@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f .env ]; then
-  export $(echo $(cat .env | sed 's/#.*//g' | sed 's/\r//g' | xargs) | envsubst);
+  export $(echo $(cat .env | sed 's/#.*//g' | sed 's/\r//g' | xargs -0) | envsubst);
 fi
 
 sudo -u postgres psql -c "CREATE DATABASE $DB_NAME;"
