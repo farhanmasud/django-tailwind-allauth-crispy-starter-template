@@ -1,4 +1,4 @@
-# Django + Tailwind + Allauth Starter Template
+# Django + Tailwind + Allauth + Crispy Forms Starter Template
 
 > :hourglass_flowing_sand: Under development
 

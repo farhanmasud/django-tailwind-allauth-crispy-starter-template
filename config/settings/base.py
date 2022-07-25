@@ -50,6 +50,8 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "tailwind",
     "theme",
+    "crispy_forms",
+    "crispy_tailwind",
 ]
 
 LOCAL_APPS = [
@@ -190,3 +192,7 @@ ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+
+# django-crispy-forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"
