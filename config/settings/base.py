@@ -30,6 +30,8 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
 
+# Allowed hosts
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
 # Application definition
 

@@ -3,9 +3,6 @@ from .base import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
-
-
 import sentry_sdk
 from sentry_sdk.integrations.django import DjangoIntegration
 
