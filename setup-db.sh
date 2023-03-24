@@ -4,8 +4,9 @@ if [ -f .env ]; then
   export $(echo $(cat .env | sed 's/#.*//g' | sed 's/\r//g' | xargs -0) | envsubst);
 fi
 
-sudo -u postgres psql -c "CREATE DATABASE $DB_NAME;"
+cd ~postgres
 
+sudo -u postgres psql -c "CREATE DATABASE $DB_NAME;"
 sudo -u postgres psql -c "CREATE USER $DB_USER WITH PASSWORD '$DB_PASSWORD';"
 sudo -u postgres psql -c "ALTER ROLE $DB_USER SET client_encoding TO 'utf8';"
 sudo -u postgres psql -c "ALTER ROLE $DB_USER SET default_transaction_isolation TO 'read committed';"
