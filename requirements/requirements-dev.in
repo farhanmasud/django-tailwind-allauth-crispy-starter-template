@@ -1,7 +1,7 @@
 # requirements-dev.in
 -c requirements.txt
-black==22.8.0
-pylint==2.9.6
-pylint-django==2.4.4
-django-debug-toolbar==3.2.1
-django-extensions==3.1.5
+black==23.3.*
+pylint==2.17.*
+pylint-django==2.5.*
+django-debug-toolbar==4.0.*
+django-extensions==3.2.*
